@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="Zettlr" />
+  <meta name="date" content="" />
+  <title></title>
+  <style type="text/css">
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: #FF7C3B;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 80%;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: white;
+    color: #333;
+    font-family: 'DejaVu', 'Georgia', 'Times New Roman', 'Times', serif;
+  }
+
+  article {
+    width: 50%;
+    font-size: 1.5em;
+    margin: 0 auto;
+    line-height: 150%;
+  }
+
+  /* Better display on printing */
+  @media print {
+    article {
+      width: 90%;
+      font-size: 12pt;
+      margin: 0 auto;
+      line-height: 150%;
+    }
+  }
+
+  article p {
+    hyphens: auto;
+    text-align: justify;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+    color: #FF7C3B;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  blockquote {
+    font-size: 80%;
+    color: rgba(120, 120, 120, 1);
+    margin: 2% 5%;
+    line-height: 120%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 70%;
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+  }
+
+  th, td {
+    padding: 4px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  figure {
+    display: inline-block;
+    align-items: center;
+  }
+
+  figure figcaption {
+    text-align: center;
+  }
+
+  /* List of classes taken from the skylighting lib */
+  /* See: https://github.com/jgm/skylighting/blob/master/skylighting-core/src/Skylighting/Format/HTML.hs */
+
+  /* Colors: Solarized theme (light) */
+  /* See: https://ethanschoonover.com/solarized/ */
+
+  /* Specific implementation: Taken from the GEdit theme (light) */
+  /* See: https://github.com/altercation/solarized/blob/master/gedit/solarized-light.xml */
+
+  /* Generic styles */
+  pre.sourceCode {
+    color: #657b83;
+    background-color: #fdf6e3;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+    padding: 2px;
+    overflow: auto;
+  }
+
+  /* All classes, taken from skylighting lib */
+  .sourceCode .kw { color: #859900; font-weight: bold; } /* Keyword */
+  .sourceCode .dt { color: #b58900; } /* Datatype */
+  .sourceCode .df { color: #d33682; } /* Decimal values*/
+  .sourceCode .bn { color: #d33682; } /* base-n-integers */
+  .sourceCode .fl { color: #d33682; } /* Floats */
+  .sourceCode .ch { color: #2aa198; } /* Character */
+  .sourceCode .st { color: #2aa198; } /* String */
+  .sourceCode .vs { color: #2aa198; } /* Verbatim String */
+  .sourceCode .ss { color: #2aa198; } /* Special String */
+  .sourceCode .co { color: #586e75; font-style: italic; } /* Comment */
+  .sourceCode .ot { font-weight: bold; } /* Other token */
+  .sourceCode .al { color: #d33682; background-color: #073642; } /* Alert */
+  .sourceCode .fu { color: #268bd2; } /* Function name */
+  .sourceCode .re {} /* Region marker */
+  .sourceCode .er { color: #dc322f; font-weight: bold; } /* Error */
+  .sourceCode .cn { color: #2aa198; } /* Constant */
+  .sourceCode .sc { color: #dc322f; } /* Special character */
+  .sourceCode .im { color: #6c71c4; font-weight: bold; } /* Import statement */
+  .sourceCode .do { color: #dc322f; } /* Documentation string */
+  .sourceCode .an { color: #2aa198; } /* Annotation */
+  .sourceCode .cv { color: #6c71c4; } /* Comment var */
+  .sourceCode .va { color: #268bd2; } /* Variable */
+  .sourceCode .cf { color: #859900; } /* Control Flow (if, else, return) */
+  .sourceCode .op {} /* Operator */
+  .sourceCode .bu { color: #b58900; } /* Builtin function/class/identifier */
+  .sourceCode .ex { color: #268bd2; } /* Extension */
+  .sourceCode .pp { color: #cb4b16; } /* Preprocessor, like #import in C++ */
+  .sourceCode .at { color: #dc322f; } /* Attribute */
+  .sourceCode .in { color: #586e75; } /* Information */
+  .sourceCode .wa { color: #cb4b16; } /* Warning */
+  </style>
+
+<!-- Pandoc variables -->
+
+<!-- Additional CSS in case the user has passed it -->
+
+<!-- Include MathJax CDN, if applicable -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+</head>
+<body>
+  <!-- Render in article for reader view enabling -->
+    <article>
+    <!-- Indentation must be zero for, e.g., PREs to work correctly -->
+<h1 id="mémoire-de-fin-détudes">Mémoire de fin d’études</h1>
+<h2 id="sujet">Sujet</h2>
+<ul>
+<li>Impacts environnementaux de l’usage du “Cloud” pour un SI</li>
+<li>Cloud &amp; DSI : analyse du point de vue environnemental</li>
+<li>Cloud vs on-premise, quelle solution pour minimiser ses impacts environnementaux ?</li>
+</ul>
+<h2 id="abstract">Abstract</h2>
+<h2 id="introduction">Introduction</h2>
+<p>Le contexte environnemental actuel ne laisse que peu de place au doute quant à la nécessité d’une action commune tournée vers la préservation de l’environnement, et notamment la réduction des émissions de gaz à effets de serre (GES). Le secteur des technologies de l’information et des communications (TIC), longtemps épargné de ces considérations environnementales du fait de sa fausse réputation d’industrie immatérielle, ne dupe aujourd’hui plus personne, et se voit donc sommé à son tour de mettre en œuvre des mesures drastiques pour réduire les émissions de GES qui lui sont dues. *TODO Compléter sur l’environnement</p>
+<p>Les travaux préliminaires sur le sujet -ce que l’on a appelé initialement le “Green IT” - ont établi un modèle de ventilation de la consommation d’énergie ainsi que de l’impact environnemental. On retrouve donc ainsi les trois composantes physiques de que représente le numérique aujourd’hui : les terminaux (ordinateurs, smartphones, objets connectés), le réseau (FAI principalement), et la traditionnelle partie serveur (datacenters).</p>
+<p>Parallèlement à cela, le secteur est toujours en très forte croissance, particulièrement grâce au “Cloud”. En effet, derrière ce mot parfois mystérieux pour les profanes se cache un ensemble de technologies qui ont profondément modifié les usages du numérique. Mais le Cloud reste mal défini, de par la multiplicité des acteurs qui emploient le terme en lui attribuant différentes significations. Tous s’accordent tout de même sur une définition générique que l’on pourrait formuler comme tel :</p>
+<blockquote>
+<p>Le terme de “Cloud” fait référence aux technologies permettant d’accéder à des ressources informatiques distantes depuis un réseau.</p>
+</blockquote>
+<p>Cette définition générique est en réalité très imparfaite car elle n’explique pas pourquoi la notion de Cloud a émergé ces dernières années, alors même que l’accession à des ressources informatiques distantes est bien plus ancienne que le terme lui même (c’est d’ailleurs la base et le but même de l’Internet). En réalité, on distingue deux grandes définitions du Cloud selon les interlocuteurs.</p>
+<p>Les premiers sont les usagers de services numériques dits “Cloud” à destination du grand public, et font référence au traitement et stockage de leurs données par un prestataire de service. Prenons l’exemple de M. Michu, fraîchement rentré de vacances, qui décide de mettre en ligne ses photos sur son espace personnel Google Drive : il dira alors que ses photos sont stockées dans le Cloud. (Ce document utilisera l’acronyme de M. Michu pour illustrer les exemples. Cette pratique est empruntée à Stéphane Bortzmeyer)</p>
+<p>Les seconds sont les professionnels du numérique, qui lorsqu’ils emploient le terme de Cloud font référence aux nouveaux services d’hébergement distants. Ces services tirent parti de technologies diverses, mais ayant toutes les caractéristiques suivantes :</p>
+<ul>
+<li>Elles sont fluides et permettent la configuration et reconfiguration dynamique de ressources informatiques</li>
+<li>Elles sont disponibles en permanence et de manière universelle depuis le Web</li>
+<li>Elles sont élastiques et permettent l’allocation dynamique de ressources</li>
+<li>Elles mettent en place la mutualisation des ressources informatiques</li>
+</ul>
+<p>Ces technologies Cloud ont été très largement adoptées par l’industrie, comme le montre une enquête réalisée par Flexera : selon elle, 94% des professionnels du numérique interrogés utilisent des services Cloud en 2019. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Cela s’explique de différentes manières, qui nécessiteraient une analyse détaillée qu’on ne réalisera pas ici. Néanmoins, une de ces raisons justifie qu’on s’y arrête : l’adoption du Cloud s’inscrit dans la tendance de servicisation du numérique, observée depuis le début du siècle. On définit sommairement la servicisation comme le passage d’une logique de prestation de fourniture d’un produit à une logique de prestation de services. Dans le cas du Cloud, ce sont les équipements informatiques (serveurs, équipements réseaux) dont il est question.</p>
+<p>On distingue traditionnellement plusieurs types de services Cloud.</p>
+<p>Cet essor extraordinaire du Cloud ces dernières années n’a été possible que grâce aux infrastructures, toujours plus impressionnantes, des fournisseurs de services Cloud : les fameux datacenters (ou datacentres en français). Ce sont souvent de grands bâtiments concentrant en leur sein des centaines, voire des milliers, de serveurs informatiques. Ces serveurs consomment de l’électricité, et chauffent pendant leur utilisation. C’est la raison pour laquelle les datacenters disposent d’équipements de climatisation, afin de maintenir une température idéale pour le bon fonctionnement des machines. Or ces datacenters ont concentré les critiques qui ont été faites du Cloud, lorsque le grand public a commencé à ouvrir les yeux sur l’imposante matérialité du numérique.</p>
+<p>Ces critiques sont compréhensibles et légitimes, quand on sait que les datacenters représentaient à eux seuls entre 1,1 et 1,5% de la consommation d’électricité mondiale en 2010.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> La fabrication et la fin de vie des équipements informatiques nécessaires aux datacenters contribuent eux aussi à alourdir le bilan environnemental.</p>
+<p>Mais la critique ne peut pas s’adresser qu’aux gestionnaires des datacenters : c’est l’usage, en tant que finalité, qui doit être questionné. Reprenons l’exemple de M. Michu qui stocke ses photos de vacances sur son espace Google Drive. Peut-il uniquement blâmer Google pour la pollution générée par le stockage de ses photos ? C’est lui qui en premier lieu a choisi d’utiliser ce service. <em>NB: en aucun cas ici je ne prétends que Google est exempt de tout reproche. Il s’agit simplement de souligner le fait que M. Michu détient aussi une part de responsabilité : il aurait du se renseigner sur l’impact de l’utilisation du service de stockage Google Drive.</em></p>
+<p>Dans un contexte professionnel, et dans l’optique de minimiser l’impact du système d’information sur l’environnement, l’usage de services Cloud doit par conséquent faire l’objet d’un questionnement sur le plan environnemental.</p>
+<p>*TODO vérifier si l’on doit restreindre l’objet d’études à l’hébergement, et donc exclure le SaaS</p>
+<p>Mais comment l’usage de services Cloud impacte t-il le bilan environnemental des systèmes d’informations des entreprises ? Le Cloud est-il vraiment l’ennemi de l’environnement, et son adoption massive est-elle à condamner ?</p>
+<h2 id="problématique">Problématique</h2>
+<p>Quelle stratégie d’hébergement privilégier pour minimiser l’impact de son SI sur l’environnement ?</p>
+<p><strong>X - Introduction &amp; Définition du Cloud</strong></p>
+<p>Dans cette première partie, nous définirons la performance énergétique des TICs comme objectif actuel de la filière et rappelons les impacts environnementaux toujours grandissants dûs à la production, l’utilisation et la fin de vie des équipements du numérique. Nous introduirons également la notion de Cloud, telle qu’habituellement définie par les acteurs scientifiques et industriels, en la présentant à la fois sous l’angle fonctionnel, mais également technique en déclinant les infrastructures nécessaires à son fonctionnement (datacenters / réseaux).</p>
+<p><strong>X- Performance énergétique des datacenters</strong></p>
+<p>Dans cette seconde partie, nous analyserons la performance énergétique des datacenters, éléments centraux du Cloud, en montrant que ces infrastructures sont de plus en plus optimisées, tant du point de vue de l’utilisation des équipements informatiques (haut taux d’utilisation des serveurs) que du point de vue des infrastructures externes (systèmes de refroidissement notamment). On effectuera une comparaison avec des sytèmes d’hébergements “classiques” et non virtualisés. On en conclura que lorsque l’on axe l’analyse sur l’énergie consommée par unité de calcul, le Cloud est effectivement très efficace et peu gourmand en énergie.</p>
+<p><strong>X- Intégration des Datacenters dans leur environnement</strong></p>
+<p>Dans cette partie, nous poursuivrons l’analyse en étudiant cette fois l’intégration des datacenters au sein de leur environnement (géographique, réseau internet, réseau électrique). En effet, les datacenters, en tant que centres physiques, sont indissociables de leur environnement. On s’intéressera donc d’abord à l’impact des datacenters sur la consommation électrique du territoire où ils sont installés, et à la carbonation de l’énergie électrique du territoire (qui contribue directement au bilan environnemental des datacenters).</p>
+<p>Un aspect sociétal est également à prendre en compte : le datacenter utilise massivement des ressources physiques via ses équipements informatiques et réseau. L’approvisionnement en matériel et la gestion de la fin de vie de ce même matériel est un axe à ne pas négliger, tant ces ressources alourdissent l’impact des datacenters sur l’environnement (souvent bien plus que la seule consommation électrique).</p>
+<p>Nous étudierons aussi les possibilités qu’offrent les énergies renouvelables dans la performance énergétique des datacenters, particulièrement lorsqu’ils sont implantés dans des territoires où le mix électrique est fortement carboné.</p>
+<p><strong>X- Pondération par les usages (IaaS vs PaaS)</strong></p>
+<p>Dans cette quatrième partie on nuancera les résultats précédents en prenant en compte les usages qui sont faits du Cloud. En effet, l’efficience énergétique présumée du Cloud est à mettre au regards de ses usages : le PaaS par exemple profite complètement des optimisations du Cloud, alors que le IaaS peut être contre-productif.</p>
+<p>Il faut par conséquent penser le Cloud non pas comme un mode d’hébergement uniquement, mais comme un contexte d’exécution qui influe sur l’architecture des systèmes applicatifs du SI (si l’on souhaite en tirer son plein potentiel d’optimisation énergétique). On souhaite ici appuyer le fait qu’une migration vers le Cloud implique l’ensemble des composantes du SI, et pas seulement le département des opérations (administrateurs systèmes). On pourra mentionner la nécessité de penser l’urbanisation du SI dans ce contexte, pour en assurer la cohérence.</p>
+<p><strong>X- Effets rebond et limites à l’efficience énergétique du Cloud</strong></p>
+<p>Dans cette cinquième partie, nous analyserons les limites et menaces à la performance énergétique du Cloud, qu’elles soient fonctionnelles, organisationnelles ou techniques. On mettra notamment en exergue les conséquences qu’une utilisation massive du Cloud peut avoir.</p>
+<p><strong>X- Donne moi ton besoin, je te donnerai ton mode d’hébergement</strong></p>
+<p>Dans cette sixième et dernière partie, nous proposerons une méthode à destination des DSI pour les accompagner dans leur choix d’hébergement, sur le critère environnemental, en segmentant les propositions selon les différents types de besoin d’hébergements qu’elles peuvent avoir. Les notions de Private Cloud et Hybrid Cloud seront à cet égard présentées comme alternatives possibles et pertinentes (dans certains cas) à un usage unique du Cloud public ou de serveurs privés traditionnels.</p>
+<h2 id="le-cloud">Le Cloud</h2>
+<p>Nous avons brièvement défini en introduction ce que l’on entendait par le terme “Cloud”.</p>
+<p>Il existe principalement 2 facteurs qui ont contribué à l’émergence du Cloud ces dernières années :</p>
+<ul>
+<li>L’augmentation du débit réseau disponible qui a permit l’émergence de la servicisation</li>
+<li>L’arrivée puis le développement des technologies de virtualisation et d’orchestration</li>
+</ul>
+<p>Attardons nous un peu plus sur ce deuxième point fait référence.</p>
+<p><em>Machine physique</em></p>
+<p>Une machine physique, aussi couramment appelée serveur dédié, est une machine qui est entièrement allouée en termes de ressources physiques (RAM, CPU, mémoire morte, etc.) aux applications qu’elle héberge. Elle est par conséquent plus performante que les autres types de serveurs car elle n’embarque pas de couche de virtualisation. Cependant cela signifie qu’une place physique importante est nécessaire. En effet une carte mère, un processeur et tous les composants informatiques peuvent prendre une grande place si le nombre de serveurs est important (avec un plus grand système de refroidissement des composants informatiques). Pour compléter ce problème de place, la modularité est enjeu. Pour augmenter ou diminuer les performances d’un serveur, il est nécessaire d’avoir un technicien qui fasse l’ajout ou le retrait d’un composant. Cela implique une indisponibilité des serveurs présents sur les serveurs lorsque l’on veut les déplacer. On retrouve le principe de machine physique dans le cloud sous le nom de «bare metal», ce type de machine est toujours utilisé pour ses hautes performances.</p>
+<p><em>Machine virtuelle </em></p>
+<p>Le terme «machine virtuelle» a été définie à l’origine par Popek et Goldberg comme “une copie efficace et isolée d’une machine informatique réelle”<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Les machines virtuelles n’ont aucune dépendance directe avec le matériel physique. Le matériel physique qui fait tourner la machine virtuelle est généralement appelé “hôte”, et la machine virtuelle émulée sur cette machine est généralement appelée “invité”. Un hôte peut émuler plusieurs invités, chacun d’entre eux pouvant émuler différents systèmes d’exploitation et plates-formes matérielles. La motivation pour créer des machines virtuelles provient du désir de faire fonctionner plusieurs systèmes d’exploitation, afin de permettre le partage du temps entre plusieurs systèmes d’exploitation mono-tâches. À mesure que la technologie évolue en matière de mémoire virtuelle à des fins de virtualisation, de nouveaux systèmes de sur-engagement de la mémoire peuvent être appliqués pour gérer le partage de la mémoire entre plusieurs machines virtuelles sur un système d’exploitation informatique. Il peut être possible de partager des pages de mémoire (mémoire virtuelle) dont le contenu est identique entre plusieurs machines virtuelles fonctionnant sur la même machine physique. Cela peut aboutir à leur mise en correspondance avec la même page physique par une technique appelée “kernel same-page merging” (KSM).Cette technique est particulièrement utile pour les pages(unité de mémoires de même taille en mémoire virtuelle)en lecture seule, telles que celles contenant des segments de code, ce qui est le cas de plusieurs machines virtuelles exécutant des logiciels identiques ou similaires, des bibliothèques logicielles, des serveurs web, des composants d’intergiciels, etc. Les systèmes d’exploitation invités n’ont pas besoin d’être compatibles avec le matériel hôte, ce qui permet d’exécuter différents systèmes d’exploitation sur le même ordinateur (par exemple, Windows, Linux ou des versions antérieures d’un système d’exploitation) pour prendre en charge de futurs logiciels10.Plusieurs VM utilisant leur propre système d’exploitation invité sont fréquemment engagées pour la consolidation des serveurs1.</p>
+<p><em>Conteneur</em></p>
+<p>Un conteneur d’application est une méthode de virtualisation qui permet de regrouper le code d’une application et toutes ses dépendances dans une seule et même unité indépendante. Les applications deviennent ainsi indépendantes de l’environnement dans lequel elles s’exécutent. La virtualisation se fait donc au niveau de l’application et non au niveau de l’infrastructure ce qui leur permet d’être déployée correctement sur n’importe quel environnement. Cette indépendance vis-à-vis de l’environnement permet également d’obtenir une application aux comportements prévisibles.12Ce niveau d’abstraction est possible grâce à deux caractéristiques:</p>
+<ul>
+<li>Namespaces</li>
+<li>Cgroups</li>
+</ul>
+<p>L’espace de noms (namespace) est une caractéristique du noyau Linux. Elle partitionne les ressources du noyau de telle sorte qu’un ensemble de processus ne peut accéder qu’à certaines ressources. Cette caractéristique fonctionne en ayant le même espace de noms pour un ensemble de ressources et de processus, mais ces espaces de noms font référence à des ressources distinctes. Les ressources peuvent exister dans plusieurs espaces.13En 2006, des ingénieures de Google initialisent des travaux sur les cgroups et la fonctionnalité des cgroups sera intégrée à la version 2.6.24 du noyau Linux.14Cgroups ou control groups est une fonctionnalité du kernel linux qui permet de limiter, de comptabiliser et d’isoler l’utilisation de ressources (CPU, mémoire) d’un ensemble des processus. Ces processus peuvent être mis dans des namespaces, ainsi des ensembles de processus partagent les mêmes limites de ressources. Une machine peut avoir plusieurs namespaces, chacun avec les propriétés des ressources imposées par le noyau. L’allocation des ressources par namespaces peut être gérée de manière à limiter la quantité globale de CPU, de RAM qu’un ensemble de processus peut utiliser. Par exemple, une application d’agrégation de logs en arrière-plan devra probablement avoir ses ressources limitées afin de ne pas submerger accidentellement le serveur qu’elle log. Bien que ce ne soit pas une fonctionnalité originale, les cgroups sous Linux ont finalement été retravaillés pour inclure une fonctionnalité appelée isolation de namespaces. L’idée de l’isolation de namespaces n’est pas nouvelle en soi, et Linux disposait déjà de plusieurs types d’isolation de namespaces. Un exemple courant est l’isolation des processus, qui sépare chaque processus individuel et empêche la mémoire partagée. L’isolation des cgroups est un niveau supérieur d’isolation qui assure que les processus au sein d’un namespace d’un cgroup soient indépendants des processus des autres namespaces. Il y a un namespace associé par conteneur au niveau de la machine hôte, pour les isoler entre eux.</p>
+<p><em>VM vs Conteneur</em></p>
+<p><em>Isolation</em> Les VM permettent l’isolation matérielle, et chaque VM (cadre violet) nécessite quand même de contenir un OS complet. Les conteneurs quant à eux font de l’isolation au niveau du processus, avec le partage de l’OS, ce qui permet d’avoir une taille de conteneur bien moindre par rapport à une VM.</p>
+<p><em>Scalability </em></p>
+<p>Une VM peut évoluer facilement en termes de ressources mais doit comprendre dans tous les cas l’OS ce qui alourdit la taille et ne permet pas un scale rapide. Alors que pour les conteneurs contiennent uniquement l’application et ses dépendances, qui sont par design prêt à être optimisé. Leur faible taille permet une bonne vélocité. Portabilité Les VM sont fortement couplées avec l’hyperviseur ce qui ne permet pas une portabilité à travers n’importe quel hyperviseur et ne fournit pas de packaging portable pour les applications. Les conteneurs n’étant pas dépendants à un hyperviseur, ils sont fortement portables. Que ce soit sur un serveur physique, une VM ou dans le cloud; l’infrastructure n’empêche pas le fonctionnement d’un conteneur</p>
+<h2 id="performance-énergétique-des-datacenters">Performance énergétique des datacenters</h2>
+<p>Le Cloud est indissociable du datacenter : il constitue la couche matérielle et physique permettant le bon fonctionnement des services proposés. Néanmoins, les datacenters ne sont pas exclusivement dédiés au Cloud : de nombreuses entreprises disposent de leur propre datacenters, ou sous-traitent, mais sans nécessairement tirer parti des technologies du Cloud.</p>
+<blockquote>
+<p>La définition du datacenter est détaillée dans les normes EN 50600 et IEC30164, un datacenter comporte :</p>
+<ul>
+<li><p>Des espaces dédiés à l’hébergement, l’interconnexion et l’utilisation d’équipements informatiques et de télécommunication. Ces équipements délivrent des services de calcul, stockage et transport de données.</p></li>
+<li><p>Des espaces dédiés aux infrastructures techniques associées aux process suivants</p>
+<ul>
+<li>Transformation et sécurisation de l’électricité</li>
+<li>Climatisation (production de froid et traitement d’air)</li>
+<li>Sécurité et sûreté</li>
+<li>Secours électrique</li>
+</ul></li>
+<li><p>Des espaces tertiaires dédiés à l’accueil, et quelques bureaux dédiés au Data center</p></li>
+<li><p>Des espaces dédiés à la logistique (quai de livraison, déballage, préparation, stockage, déchets)</p></li>
+</ul>
+</blockquote>
+<p>Contrairement aux idées reçues et au nom trompeur, le datacenter n’a pas pour seul rôle de stocker des données. En effet, il sert aussi et surtout à exécuter des applications, qui nécessitent des ressources physiques telles que de la mémoire vive ou de la puissance de calcul (CPU) principalement. Les datacenters sont régulièrement pointés du doigts en raison de leur consommation énergétique. Selon une étude de Andrae &amp; Edler <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>, actualisée par le think tank The shift project en 2018, la consommation des datacenters représente 19% de la consommation énergétique totale de la filière des TICs, et près de 1% de la consommation énergétique mondiale. Ironiquement, c’est grâce à la prolifération des datacenters que la prise de conscience de l’impact du numérique sur l’environnement s’est initiée.</p>
+<p>Afin de pouvoir quantifier et mesurer la performance énergétique de ces datacenters, des indicateurs ont été mis au point, et parmi eux le désormais célèbre PUE, pour Power Usage Effectiveness. Cet indicateur correspond au rapport entre l’énergie totale consommée par le datacenter et l’énergie totale consommée par les équipements informatiques qui le composent. En effet, de nombreux équipements annexes sont responsables d’une partie de la consommation énergétique des datacenters, tel que les systèmes de refroidissement utilisés pour compenser la chaleur dégagée par les serveurs et garder une température globale optimale à la performance de ces mêmes serveurs. D’autres équipements propres aux infrastructures (Luminaires, systèmes de chauffage, systèmes de sécurité, etc) participent également à la facture énergétiques de ces centres.</p>
+<figure>
+<img src="figure_PUE.png" alt="" /><figcaption>Figure 1. Indicateur d’efficacité énergétique, différents points de mesure. Source<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></figcaption>
+</figure>
+<p>En 2016 un groupement d’acteurs composé de l’ATEE, Enr’CERT, l’ADEME et le ministère de l’environnement a recueilli des données sur 87 datacenters français, en particulier sur les critères énergétiques et environnementaux, et ont analysés ces données pour en tirer des conclusions disponibles dans le rapport de l’étude <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. On remarque que le PUE moyen sur les centres sondés s’élevait à 1,8 : cela signifie donc que pour 1kWh d’énergie consommée pour les équipements informatiques (serveurs et équipements réseaux), l’énergie consommée par le datacenter sera de 1,8 kWh. En effet la combinaison de la concentration des équipements dans un seul et même endroit, les problématiques de sécurité et de résilience en relation avec la QoS (Quality of Service) que les gérants de ces datacenters promettent à leurs clients, ainsi que d’autres éléments annexes n’apparaissant qu’à l’échelle de ces centres, expliquent donc ce rapport moyen de 1,8, qui pourrait surprendre un usager lambda d’équipements informatiques étranger à ces problématiques. Il est intéressant de noter que les équipements servant au refroidissement alourdissent considérablement la facture énergétique : ils représentent à eux seuls 40% de la consommation d’électricité de ces centres, selon ce même rapport, contre 50% pour les équipements informatiques.</p>
+<p>En revanche, le PUE ne renseigne pas sur la consommation générale du datacenter, mais seulement sur sa répartition. Il est donc à associer à d’autres indicateurs pour pouvoir tirer une vision d’ensemble de la consommation énergétique de ces centres. C’est ce qu’ont donc fait deux chercheurs de l’université de Stanford, dans des séries d’études régulièrement mises à jour avec de nouvelles données, et dont la plus populaire fut sans doutes celle publié en 2016<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>. Leur dernière étude publiée cette année confirme les tendances que celle de 2016 2020 par une seconde étude <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>, qui s’est intéressée à l’évolution des indicateurs de performance énergétique des datacenters sur la période 2008-2016 puis jusqu’à 2020.</p>
+<p>Les résultats sont équivoques : tous les indicateurs d’efficacité énergétiques ont progressé dans les datacenters sur la période 2000 - 2020. Voyons plus en détails quels sont ces indicateurs et ce qu’ils traduisent de l’évolution du hardware sur le plan énergétique.</p>
+<p>Il existe différentes façons de mesurer l’efficacité des ordinateurs, mais l’une des plus parlantes et des plus faciles à calculer est le “Peak Output Efficiency” (l’efficacité énergétique du calcul à la puissance computationnelle maximale) généralement mesuré en calculs par kilowattheure. Cet indicateur est pertinent car l’essentiel de la consommation énergétique d’un ordinateur ou serveur provient de ses processeurs CPU &amp; GPU. Il se calcule de la manière suivante :</p>
+<p><span class="math display">\[
+POE = \frac{O^{max}}{E^{max}}
+\]</span></p>
+<p>Avec * <span class="math inline">\(POE\)</span> : Peak Output Efficiency * <span class="math inline">\(O^{max}\)</span> : nombre d’opération à puissance computationnelle maximale sur 1heure () * <span class="math inline">\(E^{max}\)</span> : électricité consommée à puissance computationnelle maximale sur 1 heure (kWh)</p>
+<p>Pendant longtemps, les performances des processeurs et l’efficacité énergétique de la puissance de calcul ont progressé conjointement à un rythme rapide. Les gains ont commencé bien avant 1965, l’année où Gordon Moore a publié sa première projection . Le rendement de pointe a doublé environ tous les 1,6 ans depuis l’aube de l’ère informatique <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. En conséquence, l’efficacité énergétique du calcul en période de pointe s’est améliorée d’environ dix ordres de grandeur entre le milieu des années 1940 et l’an 2000 - un facteur de plus de dix milliards sur plus de cinq décennies.</p>
+<p>Au tournant du millénaire, les difficultés physiques conséquentes à la miniaturisation des circuits ont ralenti la croissance du Peak Output Efficiency, de sorte qu’il ne doublait que tous les 2,6 ans environ [4], comme le montre la figure 2 ci dessous. Les fabricants de processeurs se sont alors tournés vers des changements d’architecture pour compenser le ralentissement, tels que l’utilisation de plusieurs cœurs pour les unités centrales, mais ils n’ont pas pu maintenir les taux de croissance historiques de performance et d’efficacité. La différence entre ces deux taux de croissance est importante : en doublant tous les un an et demi, on multiplie par cent l’efficacité tous les dix ans, alors qu’un doublement tous les deux ans et demi se traduit par une multiplication par seize seulement (facteur 6).</p>
+<p>Le POE (Peak output efficiency) correspond à</p>
+<ul>
+<li>ici parler de peak output efficiency et de average</li>
+<li>parler ausis des études montrant la conso globale des datacenters</li>
+</ul>
+<p>Deux raisons majeures expliquent les raisons qui ont poussé les propriétaires de datacenters à mettre en œuvre ces optimisations énergétiques ces dernières années afin d’améliorer la performance énergétique : - les critiques émises à l’égard de ces centres de données, qui ont concentré longtemps les reproches faits aux TICs sur le plan énergétique et environnemental - l’avantage économique que les optimisations énergétiques représentent pour les gérants des datacenters. La consommation d’électricité représente en effet 49% du budget annuel d’un datacenter (<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>), et constitue donc un poste important de réduction des coûts.</p>
+<p>Néanmoins, l’optimisation énergétique des serveurs fournissant la puissance de calcul a ses limites. Si pendant les 20 dernières années de nombreux progrès ont été faits, et continueront probablement d’être faits, rien ne peut garantir aujourd’hui que la courbe de consommation électrique des datacenters restera plate et ne repartira pas à la hausse.</p>
+<p>C’est pourquoi les datacenters ne sont plus vus comme des seuls centres de calculs mais comme des éléments urbains à intégrer dans leur environnement. Ce changement d’approche a conduit à tirer profit de l’expertise du “batiment durable”, comme nous allons le voir dans la prochaine partie.</p>
+<h2 id="intégration-des-datacenters-dans-leur-environnement">Intégration des Datacenters dans leur environnement</h2>
+<p>autres moyens pour diminuer : eco conception batiment innovation refroidissements ENR réutilisation chaleur</p>
+<p>liaison datacenter et réseau électrique (parler mix électrique des pays exemple norvège)</p>
+<p>Pour le premier poste, on a vu de nombreuses innovations des géants du secteur, comme le très populaire datacenter de GreenMountain en Norvège, refroidi à l’eau de mer <a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a>. D’autres innovations ont été mises en place, des méthodes de refroidissement elles mêmes jusqu’à l’organisation et l’architecture des bâtiments renfermant les datacenters.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>ENR’CERT &amp; ATEE &amp; ADEME, “L’efficacité énergétique dans les datacenters”. 2016. <a href="https://www.actu-environnement.com/media/pdf/news-27968-data-center-atee.pdf">Lien</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Koomey et al. , “Energy efficiency of computing, What’s next ?”. 2016. <a href="https://www.electronicdesign.com/technologies/microprocessors/article/21802037/energy-efficiency-of-computing-whats-next">Lien</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Popek, Gerald J.; Goldberg, Robert P, “Formal requirements for virtualizable third generation architectures”, 1974<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>Masanet et al. , “Recalibrating Global Data Center Energy-Use Estimates”. 2020. <a href="https://science.sciencemag.org/content/367/6481/984">Lien</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>ENR’CERT &amp; ATEE &amp; ADEME, “L’efficacité énergétique dans les datacenters”. 2016. <a href="https://www.actu-environnement.com/media/pdf/news-27968-data-center-atee.pdf">Lien</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>ENR’CERT &amp; ATEE &amp; ADEME, “L’efficacité énergétique dans les datacenters”. 2016. <a href="https://www.actu-environnement.com/media/pdf/news-27968-data-center-atee.pdf">Lien</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>Koomey et al. , “Energy efficiency of computing, What’s next ?”. 2016. <a href="https://www.electronicdesign.com/technologies/microprocessors/article/21802037/energy-efficiency-of-computing-whats-next">Lien</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>Masanet et al. , “Recalibrating Global Data Center Energy-Use Estimates”. 2020. <a href="https://science.sciencemag.org/content/367/6481/984">Lien</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>Koomeyet al. 2011.“Implications of Historical Trends in The Electrical Efficiency of Computing.” IEEE Annals of the History of Computing. vol. 33, no. 3. July-September. pp. 46-54. <a href="http://doi.ieeecomputersociety.org/10.1109/MAHC.2010.28">Lien</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>ENR’CERT &amp; ATEE &amp; ADEME, “L’efficacité énergétique dans les datacenters”. 2016. <a href="https://www.actu-environnement.com/media/pdf/news-27968-data-center-atee.pdf">Lien</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>Green Mountain Datacenter <a href="https://greenmountain.no/">Lien</a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+  </article>
+</body>
+</html>
